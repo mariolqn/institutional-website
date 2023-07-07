@@ -16,11 +16,12 @@ export default function Home() {
           <h4>encompassing video and photo editing, color grading, VFX,</h4>
           <h4>marketing and programming</h4>
           <h5>Want to know more about our services?</h5>
+          <button>Click Here</button>
         </div>
       </S.ContainerAction>
-      <h3>
+      <S.TittleOffers>
         First, our company offers an extensive range of audio-visual services
-      </h3>
+      </S.TittleOffers>
       <S.ContainerOffers>
         {listOffersData.map((value, index) => (
           <CompanyOffers
@@ -61,6 +62,7 @@ export default function Home() {
                   key={index}
                   icon={value.icon}
                   tittle={value.tittle}
+                  index={index}
                 ></CompanyBenefits>
               ))}
             </S.CompanyBenefits>

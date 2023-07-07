@@ -9,6 +9,7 @@ export default {
   font: {
     primary: "FuturaBoldfont",
   },
+  productLight: "#e7e9f7",
   productDark1: "#000000",
   productDark2: "#0d0f14X",
   productDark3: "#15151d",

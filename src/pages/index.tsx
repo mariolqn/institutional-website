@@ -9,6 +9,7 @@ import Home from "./home";
 import * as S from "@/styles/pages/layout/styles";
 // const inter = Inter({ subsets: ["latin"] });
 import localFont from "next/font/local";
+import BgBlurs from "@/components/blurBackground";
 const futuraBoldfont = localFont({ src: "../fonts/futuramediumbt.ttf" });
 
 export default function Index() {
@@ -19,6 +20,7 @@ export default function Index() {
           title={"Quantum Excalibur"}
           description={"Quantum Excalibur Corp"}
         ></SEO>
+        <BgBlurs />
         <Header />
         <Home />
         <Footer />
