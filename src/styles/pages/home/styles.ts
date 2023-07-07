@@ -34,10 +34,7 @@ export const ContainerAction = styled.div`
         font-size: 1.1rem;
         color: ${(props) => props.theme.productDark4};
     }
-    button{
-        height: 4rem;
-        width: 8rem;
-    }
+    
 `;
 
 export const ContainerOffers = styled.div`
@@ -46,7 +43,7 @@ export const ContainerOffers = styled.div`
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     max-width: 65rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     h3 {
         font-size: 1rem;
         max-width: 10rem;
@@ -124,4 +121,36 @@ export const CompanyBenefits = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1rem;
+`;
+
+export const ContainerEmail = styled.div`
+    width: 100%;
+   
+`;
+export const ContainerSocial = styled.div`
+    display:flex;
+    align-items: center;
+`;
+export const ContainerEmailLeft = styled.div`
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+`;
+
+export const ContainerEmailRight = styled.div`
+    display:flex;
+`;
+
+export const ContainerTextTitle = styled.div`
+    text-align: start;
+    width: 100%;
+    margin-top: 20rem;
+    h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    h4{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
 `;
