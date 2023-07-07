@@ -19,6 +19,7 @@ export const ContainerElements = styled.div`
     max-width: 10rem;
     text-align: center;
     font-size: 0.8rem;
+    line-height: 1.3;
     color: ${(props) => props.theme.productDark4};
   }
 `;

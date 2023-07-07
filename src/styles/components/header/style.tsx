@@ -11,3 +11,11 @@ export const ContainerMenu = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const ContainerButtons = styled.div`
+  display: flex;
+  gap: 7rem;
+  h4 {
+    font-size: 1.3rem;
+  }
+`;
