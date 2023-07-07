@@ -14,6 +14,7 @@ export const ContainerMenu = styled.div`
 
 export const ContainerButtons = styled.div`
   display: flex;
+  align-items: center;
   gap: 7rem;
   h4 {
     font-size: 1.3rem;
