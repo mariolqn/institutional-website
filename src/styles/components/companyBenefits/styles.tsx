@@ -25,6 +25,12 @@ export const ContainerIcon = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  @media (max-width: 576px) {
+    margin-bottom: 0rem;
+  }
+  @media (min-width: 576px) {
+    margin-bottom: 0rem;
+  }
 `;
 export const ContainerText = styled.div`
   font-size: 0.8rem;

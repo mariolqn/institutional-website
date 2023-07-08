@@ -11,6 +11,7 @@ export default createGlobalStyle`
         font-family: var(--futuramediumbt );
         font-weight : 400 ;
         color-scheme: light only;
+     
     }
     .MuiFilledInput-underline{
         border-width: 3px solid;
@@ -64,6 +65,27 @@ export default createGlobalStyle`
             filter: brightness(120%);
         }
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #0d0f14; 
+        opacity: 0.5;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #5c607f;
+        opacity: 0.5;
+        height: 2px; 
+    /* border-radius: 10px; */
+    }
+
+
    /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -81,3 +103,5 @@ input[type=number] {
       color: transparent;
     }     
 `;
+
+
