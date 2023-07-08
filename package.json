@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-icons/material": "^10.47.0",
     "@types/node": "20.4.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -18,6 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^6.0.2",
+    "styled-icons": "^10.47.0",
     "typescript": "5.1.6"
   }
 }
