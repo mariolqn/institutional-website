@@ -18,7 +18,7 @@ export default function Header() {
         </S.ContainerButtonHamburguer>
         {openmenu && (
           <S.ContainerNavMobile>
-            <S.NavBarMobile closeSideBar={!openmenu} showSideBar={openmenu}>
+            <S.NavBarMobile showSideBar={openmenu}>
               <S.IconCloseOutline onClick={() => SetOpenMenu(false)}>
                 close
               </S.IconCloseOutline>
