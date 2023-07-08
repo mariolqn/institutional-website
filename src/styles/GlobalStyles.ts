@@ -8,7 +8,8 @@ export default createGlobalStyle`
         padding: 0;
         outline: 0;
         box-sizing: border-box;
-        /* font-family: ${(props) => props.theme.font.primary};             */
+        font-family: var(--futuramediumbt );
+        font-weight : 400 ;
         color-scheme: light only;
     }
     .MuiFilledInput-underline{

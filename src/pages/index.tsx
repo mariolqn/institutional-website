@@ -8,13 +8,38 @@ import Footer from "./footer";
 import Home from "./home";
 import * as S from "@/styles/pages/layout/styles";
 // const inter = Inter({ subsets: ["latin"] });
-import localFont from "next/font/local";
 import BgBlurs from "@/components/blurBackground";
-const futuraBoldfont = localFont({ src: "../fonts/futuramediumbt.ttf" });
+import localFont from "next/font/local";
+
+const futuraBoldFont = localFont({
+  src: [
+    {
+      path: "../fonts/futura-std-extra-bold.otf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../fonts/futura-ts-demibold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/futura-ts-medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/futura-ts-regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--futuramediumbt",
+});
 
 export default function Index() {
   return (
-    <main className={futuraBoldfont.className}>
+    <main className={futuraBoldFont.variable}>
       <S.ContainerLayout style={{ display: "flex" }}>
         <SEO
           title={"Quantum Excalibur"}
