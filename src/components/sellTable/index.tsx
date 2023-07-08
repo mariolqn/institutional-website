@@ -8,13 +8,13 @@ export default function SellTable() {
   return (
     <S.ContainerTable>
       <S.Table>
-        <tr>
+        <S.Tr>
           <S.Th>{""}</S.Th>
-          <S.ColoredTd>Avalerian</S.ColoredTd>
+          <S.ColoredTh>Avalerian</S.ColoredTh>
           <S.Th>Private equity</S.Th>
           <S.Th>Venture Capital</S.Th>
-        </tr>
-        <tr>
+        </S.Tr>
+        <S.Tr>
           <S.Td contrastColor={true}>
             Ability to hand over day-to-day management
           </S.Td>
@@ -30,8 +30,8 @@ export default function SellTable() {
             <Image src={Close} alt="check icon" />
             Continue running the company
           </S.Td>
-        </tr>
-        <tr>
+        </S.Tr>
+        <S.Tr>
           <S.Td contrastColor={true}>Founder payout</S.Td>
           <S.Td>
             <Image src={Check} alt="check icon" />
@@ -45,8 +45,8 @@ export default function SellTable() {
             <Image src={Close} alt="check icon" />
             No exit until sale or IPO
           </S.Td>
-        </tr>
-        <tr>
+        </S.Tr>
+        <S.Tr>
           <S.Td contrastColor={true}>Process</S.Td>
           <S.Td>
             <Image src={Check} alt="check icon" />
@@ -61,8 +61,8 @@ export default function SellTable() {
             Months-long complicated process, requiring multiple investors to buy
             in
           </S.Td>
-        </tr>
-        <tr>
+        </S.Tr>
+        <S.Tr>
           <S.Td contrastColor={true}>Time horizon</S.Td>
           <S.Td>
             <Image src={Check} alt="check icon" />
@@ -76,8 +76,8 @@ export default function SellTable() {
             <Image src={Close} alt="check icon" />
             Focus only until next round
           </S.Td>
-        </tr>
-        <tr>
+        </S.Tr>
+        <S.Tr>
           <S.Td contrastColor={true}>Approach to growth</S.Td>
           <S.Td>
             <Image src={Check} alt="check icon" />
@@ -93,7 +93,7 @@ export default function SellTable() {
             Unsustainable growth fueled by VC capital that pushes company to its
             limits
           </S.Td>
-        </tr>
+        </S.Tr>
       </S.Table>
     </S.ContainerTable>
   );

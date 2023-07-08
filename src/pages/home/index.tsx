@@ -44,7 +44,7 @@ export default function Home() {
           ))}
         </S.ContainerOffers>
       </section>
-      <section>
+      <section id="about">
         <S.ContainerSecondArea>
           <S.ContainerTextLeft>
             <div style={{ display: "flex" }}>
@@ -83,13 +83,17 @@ export default function Home() {
           </S.ContainerBannersRight>
         </S.ContainerSecondArea>
       </section>
-      <S.ContainerTable>
-        <S.ContainerTextTitle>
-          <h1>Why sell to us?</h1>
-          <h4>Avalerian bring experience, growth and independence for you.</h4>
-        </S.ContainerTextTitle>
-        <SellTable />
-      </S.ContainerTable>
+      <section id="jobs">
+        <S.ContainerTable>
+          <S.ContainerTextTitle>
+            <h1>Why sell to us?</h1>
+            <h4>
+              Avalerian bring experience, growth and independence for you.
+            </h4>
+          </S.ContainerTextTitle>
+          <SellTable />
+        </S.ContainerTable>
+      </section>
       <section>
         <S.ContainerProcess>
           <S.ContainerLeft>

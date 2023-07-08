@@ -5,32 +5,78 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-behavior: smooth;
+
 `;
 export const ContainerAction = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     overflow-y: none;
     h1{
-        font-weight: bold;
-        font-size: 7rem;
-        padding-bottom: 1rem;
-        font-family: var(--futuramediumbt );
-        font-weight: 700;
-    }
-    h2{
-        font-weight: lighter;
-        font-size: 6.5rem;
-        padding-bottom: 1rem;
-        font-family: var(--futuramediumbt );
-        font-weight: 500;
+            font-weight: bold;
+            font-size: 7rem;
+            padding-bottom: 1rem;
+            font-family: var(--futuramediumbt );
+            font-weight: 700;
+            @media (max-width: 576px) {
+                padding: 2rem;
+                font-size: 4rem;
+            }
+            @media (min-width: 576px) {
+                padding: 2rem;
+                font-size: 4rem;
+            }
+            @media (min-width: 1025px) {
+                padding: 2rem;
+                font-size: 6rem;
+            }
+            @media (min-width: 1225px) {
+                font-size: 7rem;
+            }
+        }
+        h2{
+            font-weight: lighter;
+            font-size: 6.5rem;
+            padding-bottom: 1rem;
+            font-family: var(--futuramediumbt );
+            font-weight: 500;
+            @media (max-width: 576px) {
+                font-size: 2rem;
+                padding-bottom: 4rem;
+            }
+            @media (min-width: 576px) {
+                padding-bottom: 4rem;
+                font-size: 2rem;
+            }
+            @media (min-width: 1025px) {
+                padding: 2rem;
+                font-size: 5.5rem;
+            }
+            @media (min-width: 1225px) {
+                font-size: 6.5rem;
+            }
+            
         }
     h4{
         padding: 0.3rem;
         font-size: 2rem;
         padding-bottom: 0.5rem;
+        @media (max-width: 576px) {
+            padding: 0rem;
+            font-size: 0.8rem;
+        }
+        @media (min-width: 576px) {
+            font-size: 1.1rem;
+        }
+        @media (min-width: 1025px) {
+            font-size: 1.9rem;
+        }
+        @media (min-width: 1225px) {
+            font-size: 2rem;
+        }
         
     }
     h5{
@@ -56,12 +102,27 @@ export const ContainerOffers = styled.div`
         text-align: center;
         margin-bottom: 1rem;
     }
+    @media (max-width: 576px) {
+        margin-bottom: 10rem;
+    }
 `;
 export const TittleOffers = styled.h3`
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 4rem;
+    flex-wrap: wrap;
+    @media (max-width: 576px) {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+    @media (min-width: 576px) {
+        margin-bottom: 2rem;
+    }
+    @media (min-width: 1025px) {
+        font-size: 1.5rem;
+
+    }
 `;
 
 export const ContainerSecondArea = styled.div`
@@ -70,6 +131,12 @@ export const ContainerSecondArea = styled.div`
     display: flex;
     justify-content: space-between;
     max-width: 80rem;
+    margin-bottom: 25rem;
+    @media (max-width: 576px) {
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+   
 `;
 export const ContainerTextLeft = styled.div`
     width: 50%;
@@ -81,6 +148,10 @@ export const ContainerTextLeft = styled.div`
         font-size: 1.2rem;
         color: ${(props) => props.theme.productLight}
     }
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+   
 `;
 export const TittleColor = styled.h1<{colored ?: boolean}>`
     color: ${(props) => props.colored ? props.theme.productAccent2 : "white"};
@@ -93,6 +164,12 @@ export const ContainerBannersRight = styled.div`
     h5{
         margin-left: 1rem;
         font-size: 0.8rem;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+    @media (min-width: 576px) {
+        width: 100%;
     }
 `;
 export const ContainerTexts = styled.div`
@@ -108,9 +185,20 @@ export const ContainerBorderText = styled.div`
     display: flex;
     flex-direction: column;
     border-left: solid 2px ${(props) => props. theme.productError1};
-    margin-bottom: 2rem;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 0rem;
     h5{
         font-size: 0.9rem;
+        margin: 0rem 0rem 0rem 1rem;
+        padding: 0rem;
+        @media (max-width: 576px) {
+            margin: 0rem 0rem 0rem 1rem;
+            padding: 0rem;
+            margin-bottom: 0rem;
+        }
+    }
+    @media (max-width: 576px) {
+        margin: 2rem 0rem 2rem 0rem;
     }
 `;
 
@@ -150,30 +238,43 @@ export const ContainerEmailRight = styled.div`
 export const ContainerTable = styled.div`
     width: 100%;
     max-width: 70rem;
+    margin-bottom: 25rem;
+    @media (max-width: 576px) {
+         margin-bottom: 10rem;
+    }
 `;
 
 export const ContainerTextTitle = styled.div`
     text-align: start;
     width: 100%;
-    margin-top: 20rem;
     h1{
         font-size: 4rem;
         margin-bottom: 2rem;
+        @media (max-width: 576px) {
+            font-size: 2rem;
+        }
     }
     h4{
         font-size: 1.4rem;
         margin-bottom: 2rem;
     }
+    
 `;
 
 export const ContainerProcess = styled.div`
     width: 100%;
     display: flex;
-    margin-top: 25rem;
+   
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
     
 `;
 export const ContainerLeft = styled.div`
     width: 50%;
+    @media (max-width: 576px) {
+        width: 100%;
+    }
 
 `;
 export const ContainerRight = styled.div`
@@ -196,5 +297,14 @@ export const ContainerRight = styled.div`
         font-size: 1.8rem;
         margin-bottom: 2rem;
         max-width: 28rem;
+    }
+    @media (max-width: 576px) {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0rem;
+
     }
 `;

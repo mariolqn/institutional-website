@@ -22,4 +22,10 @@ export const ContainerElements = styled.div`
     line-height: 1.3;
     color: ${(props) => props.theme.productDark4};
   }
+  img {
+    @media (max-width: 576px) {
+      width: 120px;
+      height: 120px;
+    }
+  }
 `;
