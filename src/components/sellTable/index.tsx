@@ -9,7 +9,7 @@ export default function SellTable() {
     <S.ContainerTable>
       <S.Table>
         <tr>
-          <S.Th></S.Th>
+          <S.Th>{""}</S.Th>
           <S.ColoredTd>Avalerian</S.ColoredTd>
           <S.Th>Private equity</S.Th>
           <S.Th>Venture Capital</S.Th>

@@ -21,4 +21,5 @@ export default {
   productAccent1: "#a04579",
   productAccent2: "#01F3FD",
   productError1: "#5e0c11",
+  productError2: "#fd212e",
 };

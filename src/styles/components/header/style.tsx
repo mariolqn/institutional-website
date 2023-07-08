@@ -12,11 +12,16 @@ export const ContainerMenu = styled.div`
   justify-content: space-between;
 `;
 
-export const ContainerButtons = styled.div`
+export const ContainerButtons = styled.nav`
   display: flex;
   align-items: center;
   gap: 7rem;
-  h4 {
-    font-size: 1.3rem;
+  button {
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: white;
   }
 `;

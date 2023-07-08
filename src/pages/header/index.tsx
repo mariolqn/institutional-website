@@ -10,9 +10,9 @@ export default function Header() {
       <S.ContainerMenu>
         <Image src={logo} alt="logo" width={234} height={155}></Image>
         <S.ContainerButtons>
-          <h4>HOME</h4>
-          <h4>ABOUT</h4>
-          <h4>JOBS</h4>
+          <button>HOME</button>
+          <button>ABOUT</button>
+          <button>JOBS</button>
           <Button>CONTACT US</Button>
         </S.ContainerButtons>
       </S.ContainerMenu>

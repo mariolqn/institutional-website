@@ -11,10 +11,12 @@ import IconEmail from "@/assets/svg/IconEmail.svg";
 import FormEmail from "@/components/formEmail";
 import { Button } from "@/styles/components/button/style";
 import SellTable from "@/components/sellTable";
+import TimeLine from "@/components/timeLine";
+
 export default function Home() {
   return (
     <S.Container>
-      <>
+      <section>
         <S.ContainerAction>
           <h1>Quantum Excalibur</h1>
           <h2>Corp featured in AI</h2>
@@ -26,8 +28,8 @@ export default function Home() {
             <Button>Click Here</Button>
           </div>
         </S.ContainerAction>
-      </>
-      <>
+      </section>
+      <section>
         <S.TittleOffers>
           First, our company offers an extensive range of audio-visual services
         </S.TittleOffers>
@@ -41,9 +43,8 @@ export default function Home() {
             ></CompanyOffers>
           ))}
         </S.ContainerOffers>
-      </>
-
-      <>
+      </section>
+      <section>
         <S.ContainerSecondArea>
           <S.ContainerTextLeft>
             <div style={{ display: "flex" }}>
@@ -81,14 +82,31 @@ export default function Home() {
             </S.ContainerTopText>
           </S.ContainerBannersRight>
         </S.ContainerSecondArea>
-      </>
-      <>
+      </section>
+      <S.ContainerTable>
         <S.ContainerTextTitle>
           <h1>Why sell to us?</h1>
           <h4>Avalerian bring experience, growth and independence for you.</h4>
         </S.ContainerTextTitle>
         <SellTable />
-
+      </S.ContainerTable>
+      <section>
+        <S.ContainerProcess>
+          <S.ContainerLeft>
+            <TimeLine />
+          </S.ContainerLeft>
+          <S.ContainerRight>
+            <div style={{ display: "flex" }}>
+              <h2>Exit</h2> <h1>Fast.</h1>
+            </div>
+            <h3>
+              Our process emphasizes fast, lucrative exits for software founders
+            </h3>
+            <Button>Get started</Button>
+          </S.ContainerRight>
+        </S.ContainerProcess>
+      </section>
+      <>
         {/* <S.ContainerEmail>
           <S.ContainerEmailLeft>
             <Image src={Logo} alt="logo"></Image>
