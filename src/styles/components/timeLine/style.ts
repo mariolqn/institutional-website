@@ -9,6 +9,9 @@ export const TimeText = styled.h4`
   min-height: 1rem;
   width: 100%;
   color: ${(props) => props.theme.productError2};
+   @media (max-width: 576px) {
+      min-height: 1rem;
+    }
 `;
 export const ContainerBlock = styled.div`
   display: flex;
@@ -22,6 +25,16 @@ export const ContainerLeft  = styled.div<{appear ?: boolean}>`
   text-align: right;
   margin-right: 1rem;
   min-height: 8rem;
+  h2{
+      @media (max-width: 576px) {
+        min-height: 5.5rem;
+      }
+    }
+  @media (max-width: 576px) {
+      min-height: 5rem;
+
+    }
+  
 `;
 
 export const ContainerMiddle = styled.div `
@@ -36,6 +49,15 @@ export const ContainerRight = styled.div<{appear ?: boolean}>`
   opacity: ${(props) => props.appear ? 1 : 0};
   margin-left: 1rem;
   min-height: 8rem;
+    h2{
+      @media (max-width: 576px) {
+        min-height: 6.1rem;
+      }
+    }
+  @media (max-width: 576px) {
+      min-height: 5rem;
+
+    }
 `;
 
 export const Circle = styled.div`

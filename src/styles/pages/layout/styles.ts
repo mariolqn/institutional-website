@@ -6,7 +6,7 @@ export const ContainerLayout = styled.div`
     align-items: center;
     flex-direction: column;
     @media (max-width: 576px) {
-        padding: 1rem 1rem;
+        padding: 0rem 2rem;
     }
     @media  (min-width: 576px) {
         padding: 1rem 1rem;

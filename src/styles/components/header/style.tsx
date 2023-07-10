@@ -5,9 +5,12 @@ import logoSimple from "../../../assets/svg/logoSimple.svg";
 import { Menu } from "@styled-icons/evaicons-solid/Menu";
 import { CloseOutline } from "@styled-icons/evaicons-outline/CloseOutline";
 export const Container = styled.div`
-  padding: 2rem;
+  padding: 2rem 0rem;
   width: 100%;
   align-items: center;
+  @media (max-width: 576px) {
+    padding: 1rem 0rem 0rem 0rem;
+  }
 `;
 
 export const ContainerMenu = styled.div`
@@ -20,11 +23,11 @@ export const ContainerButtons = styled.nav`
   display: flex;
   align-items: center;
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     gap: 0rem;
     display: none;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     gap: 2rem;
   }
   @media (min-width: 1025px) {
@@ -53,7 +56,7 @@ export const ContainerNavMobile = styled.nav`
 
 export const NavBarMobile = styled.nav<{ showSideBar: boolean }>`
   padding: 6rem 2rem 2rem 2rem;
-  width: 56%;
+  width: 14.2rem;
   background: ${(props) => props.theme.productDark5};
   display: flex;
   position: fixed;
@@ -79,13 +82,13 @@ export const NavBarMobile = styled.nav<{ showSideBar: boolean }>`
     }
     to {
       opacity: 1;
-      width: 56%;
+      width: 14.2rem;
     }
   }
   @keyframes animCloseSidebar {
     from {
       opacity: 1;
-      width: 56%;
+      width: 14.2rem;
     }
     to {
       opacity: 0;
@@ -105,6 +108,9 @@ export const ContainerButtonHamburguer = styled.button`
   }
   * {
     color: white;
+  }
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 export const IconMenu = styled(Menu)`

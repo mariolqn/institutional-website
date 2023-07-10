@@ -12,54 +12,51 @@ export const ContainerAction = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 0rem;
     margin-bottom: 10rem;
     overflow-y: none;
     h1{
-            font-weight: bold;
+        font-weight: bold;
+        font-size: 7rem;
+        padding-bottom: 1rem;
+        font-family: var(--futuramediumbt );
+        font-weight: 700;
+        @media (max-width: 576px) {
+            font-size: 4rem;
+        }
+        @media (min-width: 576px) {
+            font-size: 4rem;
+        }
+        @media (min-width: 1025px) {
+            font-size: 6rem;
+        }
+        @media (min-width: 1225px) {
             font-size: 7rem;
-            padding-bottom: 1rem;
-            font-family: var(--futuramediumbt );
-            font-weight: 700;
-            @media (max-width: 576px) {
-                padding: 2rem;
-                font-size: 4rem;
-            }
-            @media (min-width: 576px) {
-                padding: 2rem;
-                font-size: 4rem;
-            }
-            @media (min-width: 1025px) {
-                padding: 2rem;
-                font-size: 6rem;
-            }
-            @media (min-width: 1225px) {
-                font-size: 7rem;
-            }
         }
-        h2{
-            font-weight: lighter;
+        }
+    h2{
+        font-weight: lighter;
+        font-size: 6.5rem;
+        padding-bottom: 1rem;
+        font-family: var(--futuramediumbt );
+        font-weight: 500;
+        @media (max-width: 576px) {
+            font-size: 2rem;
+            padding-bottom: 4rem;
+        }
+        @media (min-width: 576px) {
+            padding-bottom: 4rem;
+            font-size: 2rem;
+        }
+        @media (min-width: 1025px) {
+            padding: 2rem;
+            font-size: 5.5rem;
+        }
+        @media (min-width: 1225px) {
             font-size: 6.5rem;
-            padding-bottom: 1rem;
-            font-family: var(--futuramediumbt );
-            font-weight: 500;
-            @media (max-width: 576px) {
-                font-size: 2rem;
-                padding-bottom: 4rem;
-            }
-            @media (min-width: 576px) {
-                padding-bottom: 4rem;
-                font-size: 2rem;
-            }
-            @media (min-width: 1025px) {
-                padding: 2rem;
-                font-size: 5.5rem;
-            }
-            @media (min-width: 1225px) {
-                font-size: 6.5rem;
-            }
-            
         }
+        
+    }
     h4{
         padding: 0.3rem;
         font-size: 2rem;
@@ -104,15 +101,20 @@ export const ContainerOffers = styled.div`
     }
     @media (max-width: 576px) {
         margin-bottom: 10rem;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 `;
 export const TittleOffers = styled.h3`
+    padding: 0rem 2rem;
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 4rem;
     flex-wrap: wrap;
     @media (max-width: 576px) {
+        padding: 0rem;
+
         margin-bottom: 1.5rem;
         font-size: 1.2rem;
     }
@@ -126,7 +128,7 @@ export const TittleOffers = styled.h3`
 `;
 
 export const ContainerSecondArea = styled.div`
-    padding: 2rem;
+    padding: 2rem 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -150,11 +152,13 @@ export const ContainerTextLeft = styled.div`
     }
     @media (max-width: 576px) {
         width: 100%;
+        
     }
    
 `;
 export const TittleColor = styled.h1<{colored ?: boolean}>`
     color: ${(props) => props.colored ? props.theme.productAccent2 : "white"};
+    font-size: 3rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
 `;
@@ -177,6 +181,7 @@ export const ContainerTexts = styled.div`
     justify-content: space-between;
     display: grid;
     justify-items: left;
+    gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     
 `;
@@ -251,12 +256,15 @@ export const ContainerTextTitle = styled.div`
         font-size: 4rem;
         margin-bottom: 2rem;
         @media (max-width: 576px) {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
     h4{
         font-size: 1.4rem;
         margin-bottom: 2rem;
+        @media (max-width: 576px) {
+            font-size: 1.2rem;
+        }
     }
     
 `;
@@ -264,7 +272,6 @@ export const ContainerTextTitle = styled.div`
 export const ContainerProcess = styled.div`
     width: 100%;
     display: flex;
-   
     @media (max-width: 576px) {
         flex-direction: column;
     }
@@ -274,6 +281,7 @@ export const ContainerLeft = styled.div`
     width: 50%;
     @media (max-width: 576px) {
         width: 100%;
+        margin-bottom: 5rem;
     }
 
 `;
