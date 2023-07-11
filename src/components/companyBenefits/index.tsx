@@ -10,7 +10,7 @@ type componetBenefits = {
 
 export default function companyBenefits({ ...props }: componetBenefits) {
   return (
-    <S.Container changeColor={props.index % 2 === 1 ? true : false}>
+    <S.Container changecolor={props.index % 2 === 1 ? "true" : "false"}>
       <S.ContainerIcon>
         <Image
           src={props.icon}

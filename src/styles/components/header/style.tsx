@@ -54,7 +54,7 @@ export const ContainerNavMobile = styled.nav`
   background: red;
 `;
 
-export const NavBarMobile = styled.nav<{ showSideBar: boolean }>`
+export const NavBarMobile = styled.nav<{ showsidebar: string }>`
   padding: 6rem 2rem 2rem 2rem;
   width: 14.2rem;
   background: ${(props) => props.theme.productDark5};
@@ -64,10 +64,10 @@ export const NavBarMobile = styled.nav<{ showSideBar: boolean }>`
   align-items: center;
   height: 100vh;
   margin-top: -7.8rem;
-  right: ${(props) => (props.showSideBar ? "0" : "100%")};
+  right: ${(props) => (props.showsidebar == "true" ? "0" : "100%")};
 
   animation: ${(props) =>
-    props.showSideBar ? "animShowSidebar 0.4s" : "closeShowSidebar 0.4s"};
+    props.showsidebar ? "animShowSidebar 0.4s" : "closeShowSidebar 0.4s"};
   gap: 2rem;
   button {
     z-index: 9999999;

@@ -48,8 +48,8 @@ export default function Home() {
         <S.ContainerSecondArea>
           <S.ContainerTextLeft>
             <div style={{ display: "flex" }}>
-              <S.TittleColor colored={false}>Second </S.TittleColor>
-              <S.TittleColor colored={true}> Area</S.TittleColor>
+              <S.TittleColor colored={"false"}>Second </S.TittleColor>
+              <S.TittleColor colored={"true"}> Area</S.TittleColor>
             </div>
             <h4>
               Expertise lies in corporate consulting, where we help businesses

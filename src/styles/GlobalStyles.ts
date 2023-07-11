@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
  
 
 export default createGlobalStyle`  
-   
     *{
         margin: 0;
         padding: 0;
@@ -10,7 +9,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: var(--futuramediumbt );
         font-weight : 400 ;
-        color-scheme: light only;
+        color-scheme: dark only;
      
     }
     .MuiFilledInput-underline{

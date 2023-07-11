@@ -7,7 +7,10 @@ export default function TimeLine() {
     <S.Container>
       <div>
         {listTimeLine.map((value, index) => (
-          <S.ContainerLeft key={index} appear={index % 2 === 0 ? true : false}>
+          <S.ContainerLeft
+            key={index}
+            appear={index % 2 === 0 ? "true" : "false"}
+          >
             <S.TimeText>{value.Tittle}</S.TimeText>
             <h2>{value.description}</h2>
           </S.ContainerLeft>
@@ -25,7 +28,10 @@ export default function TimeLine() {
       </div>
       <div>
         {listTimeLine.map((value, index) => (
-          <S.ContainerRight key={index} appear={index % 2 === 1 ? true : false}>
+          <S.ContainerRight
+            key={index}
+            appear={index % 2 === 1 ? "true" : "false"}
+          >
             <S.TimeText>{value.Tittle}</S.TimeText>
             <h2>{value.description}</h2>
           </S.ContainerRight>
