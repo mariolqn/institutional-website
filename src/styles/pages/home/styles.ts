@@ -31,7 +31,7 @@ export const ContainerAction = styled.div`
             font-size: 6rem;
         }
         @media (min-width: 1225px) {
-            font-size: 7rem;
+            font-size: 5.5rem;
         }
         }
     h2{
@@ -53,7 +53,8 @@ export const ContainerAction = styled.div`
             font-size: 5.5rem;
         }
         @media (min-width: 1225px) {
-            font-size: 6.5rem;
+            padding: 0rem;
+            font-size: 5.5rem;
         }
         
     }
@@ -72,7 +73,7 @@ export const ContainerAction = styled.div`
             font-size: 1.9rem;
         }
         @media (min-width: 1225px) {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         
     }
@@ -128,12 +129,11 @@ export const TittleOffers = styled.h3`
 `;
 
 export const ContainerSecondArea = styled.div`
-    padding: 2rem 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     max-width: 80rem;
-    margin-bottom: 25rem;
+    margin-bottom: 30rem;
     @media (max-width: 576px) {
         flex-direction: column;
         margin-bottom: 10rem;
@@ -141,10 +141,10 @@ export const ContainerSecondArea = styled.div`
    
 `;
 export const ContainerTextLeft = styled.div`
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    max-width: 25rem;
+    max-width: 30rem;
     line-height: 1.8;
     h4{
         font-size: 1.2rem;
@@ -164,7 +164,7 @@ export const TittleColor = styled.h1<{colored: string}>`
 `;
 
 export const ContainerBannersRight = styled.div`
-    width: 50%;
+    width: 40%;
     h5{
         margin-left: 1rem;
         font-size: 0.8rem;
@@ -177,13 +177,16 @@ export const ContainerBannersRight = styled.div`
     }
 `;
 export const ContainerTexts = styled.div`
-    width: 100%;
     justify-content: space-between;
     display: grid;
     justify-items: left;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    
+    margin-left: 10rem;
+    @media (max-width: 576px) {
+      
+        margin-left: 0rem;
+    }
 `;
 
 export const ContainerBorderText = styled.div`
@@ -207,6 +210,10 @@ export const ContainerBorderText = styled.div`
     }
 `;
 
+export const ContainerBorderTextColored = styled(ContainerBorderText)`
+    border-left: solid 2px ${(props) => props. theme.productAccent1};
+`;
+
 export const ContainerTopText = styled.div`
     display:flex;
     width: 100%;
@@ -220,11 +227,18 @@ export const CompanyBenefits = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1rem;
+    margin-left: 10rem;
+    @media (max-width: 576px) {
+      
+      margin-left: 0rem;
+  }
 `;
 
 export const ContainerEmail = styled.div`
     width: 100%;
     display: flex;
+    justify-content: space-between;
+
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -253,7 +267,7 @@ export const ContainerSocial = styled.div`
 export const ContainerEmailLeft = styled.div`
     display:flex;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
     gap: 1rem;    
 
     div{
@@ -261,7 +275,7 @@ export const ContainerEmailLeft = styled.div`
     }
     h1{
       
-        font-size: 2.4rem;
+        font-size: 3rem;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-background-clip: text;
@@ -296,6 +310,17 @@ export const ContainerEmailRight = styled.div`
        max-width: 30rem;
         width: 100%;
         margin-bottom: 5rem;
+        margin-left: 0rem;
+    }
+    
+    @media (max-width: 992px) {
+      
+      margin-left: 0rem;
+  }
+  
+    @media (min-width: 1025px) {
+      
+        margin-left: 10rem;
     }
    
 `;
@@ -361,9 +386,10 @@ export const ContainerRight = styled.div`
         margin-right: 1rem;
     }
     h3{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin-bottom: 2rem;
-        max-width: 28rem;
+        max-width: 25rem;
+        font-weight: lighter;
     }
     @media (max-width: 576px) {
         display: flex;

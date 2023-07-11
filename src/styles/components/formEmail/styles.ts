@@ -26,6 +26,8 @@ export const Form = styled.form`
   }
 
 `;
+
+
 export const Input = styled.input`
   width: 100%;
   height: 3rem;
@@ -33,33 +35,6 @@ export const Input = styled.input`
   color: white; 
   outline: none;
   border: none;
-  background: ${(props) => props.theme.productDark3};
-    
-
- ::-webkit-input-placeholder {
-  color: deeppink;
-  }
-  /* Firefox 4-18 */
-  :-moz-placeholder {
-    color: deeppink;
-    opacity: 1;
-  }
-  /* Firefox 19+ */
-  ::-moz-placeholder {
-    color: deeppink;
-    opacity: 1;
-  }
-  /* IE 10-11 */
-  :-ms-input-placeholder {
-    color: deeppink;
-  }
-  /* Edge */
-  ::-ms-input-placeholder {
-    color: deeppink;
-  }
-  /* MODERN BROWSER */
-  ::placeholder {
-    color: deeppink;
-  }
+  background: ${(props) => props.theme.productDark7};
+  
 `;
-
