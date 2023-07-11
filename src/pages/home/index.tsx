@@ -1,17 +1,16 @@
-import React from "react";
-import * as S from "@/styles/pages/home/styles";
-import CompanyOffers from "@/components/companyOffers";
-import { listOffersData } from "@/data/componetOffersData";
-import CompanyBenefits from "@/components/companyBenefits";
-import { listBenefitsData } from "@/data/companyBenefitsData";
-import Image from "next/image";
-import Logo from "@/assets/svg/logosimple.svg";
-import IconLinkedin from "@/assets/svg/IconLinkedIn.svg";
 import IconEmail from "@/assets/svg/IconEmail.svg";
+import IconLinkedin from "@/assets/svg/IconLinkedIn.svg";
+import Logo from "@/assets/svg/logosimple.svg";
+import CompanyBenefits from "@/components/companyBenefits";
+import CompanyOffers from "@/components/companyOffers";
 import FormEmail from "@/components/formEmail";
-import { Button } from "@/styles/components/button/style";
 import SellTable from "@/components/sellTable";
 import TimeLine from "@/components/timeLine";
+import { listBenefitsData } from "@/data/companyBenefitsData";
+import { listOffersData } from "@/data/componetOffersData";
+import { Button } from "@/styles/components/button/style";
+import * as S from "@/styles/pages/home/styles";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,7 +24,7 @@ export default function Home() {
             <h4>encompassing video and photo editing, color grading, VFX,</h4>
             <h4>marketing and programming</h4>
             <h5>Want to know more about our services?</h5>
-            <Button>Click Here</Button>
+            <Button fullwidth={"false"}>Click Here</Button>
           </div>
         </S.ContainerAction>
       </section>
@@ -64,10 +63,10 @@ export default function Home() {
                   <h5>Horizontal software</h5>
                   <h5>solutions across industries</h5>
                 </S.ContainerBorderText>
-                <S.ContainerBorderText>
+                <S.ContainerBorderTextColored>
                   <h5>Vertical software solutions focused</h5>
                   <h5>in a specific niche</h5>
-                </S.ContainerBorderText>
+                </S.ContainerBorderTextColored>
               </S.ContainerTexts>
               <S.CompanyBenefits>
                 {listBenefitsData.map((value, index) => (
@@ -106,22 +105,32 @@ export default function Home() {
             <h3>
               Our process emphasizes fast, lucrative exits for software founders
             </h3>
-            <Button>Get started</Button>
+            <Button fullwidth={"false"}>Get started</Button>
           </S.ContainerRight>
         </S.ContainerProcess>
       </section>
-      <>
+      <section id="contact" style={{ width: "100%" }}>
         <S.ContainerEmail>
           <S.ContainerEmailLeft>
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo" width={112} height={155} />
             <div>
               <h1>Get in touch</h1>
               <h4>
                 Thinking of selling, or you know someone whom we should meet?
               </h4>
               <S.ContainerSocial>
-                <Image src={IconLinkedin} alt="Icon Linkedin"></Image>
-                <Image src={IconEmail} alt="Icon Email"></Image>
+                <Image
+                  src={IconLinkedin}
+                  alt="Icon Linkedin"
+                  width={35}
+                  height={35}
+                ></Image>
+                <Image
+                  src={IconEmail}
+                  alt="Icon Email"
+                  width={35}
+                  height={35}
+                ></Image>
                 <h4>contact@quantumexcalibur.com</h4>
               </S.ContainerSocial>
             </div>
@@ -130,7 +139,7 @@ export default function Home() {
             <FormEmail />
           </S.ContainerEmailRight>
         </S.ContainerEmail>
-      </>
+      </section>
     </S.Container>
   );
 }

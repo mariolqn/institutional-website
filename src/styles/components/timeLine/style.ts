@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   display: flex;
+  margin-left: 2rem;
+  @media (max-width: 576px) {
+    margin-left: 0rem;
+  }
 `;
 
 export const TimeText = styled.h4`
@@ -68,7 +72,7 @@ export const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background: ${(props) => props.theme.productDark4};
+  background: ${(props) => props.theme.productDark6};
 `;
 
 export const Divider = styled.div`

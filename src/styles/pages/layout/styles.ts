@@ -15,7 +15,7 @@ export const ContainerLayout = styled.div`
         padding: 1rem 5rem;
     }
     @media (min-width: 1225px){
-        padding: 1rem 12rem;
+        padding: 1rem 18rem;
     }
    
   

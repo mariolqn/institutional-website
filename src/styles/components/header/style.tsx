@@ -34,7 +34,7 @@ export const ContainerButtons = styled.nav`
     gap: 4rem;
   }
   @media (min-width: 1225px) {
-    gap: 7rem;
+    gap: 4.5rem;
   }
 `;
 export const ButtonMenu = styled.button`

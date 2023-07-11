@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <S.Container id="home">
       <S.ContainerMenu>
-        <Image src={logo} alt="logo" width={234} height={155}></Image>
+        <Image src={logo} alt="logo" width={211} height={140}></Image>
         <S.ContainerButtonHamburguer onClick={() => SetOpenMenu(true)}>
           <S.IconMenu />
         </S.ContainerButtonHamburguer>
@@ -46,7 +46,15 @@ export default function Header() {
               >
                 JOBS
               </S.ButtonMenu>
-              <Button>CONTACT US</Button>
+              <Button
+                fullwidth={"false"}
+                onClick={() => {
+                  push("#contact");
+                  SetOpenMenu(false);
+                }}
+              >
+                CONTACT US
+              </Button>
             </S.NavBarMobile>
           </S.ContainerNavMobile>
         )}
@@ -55,7 +63,9 @@ export default function Header() {
           <S.ButtonMenu onClick={() => push("#home")}>HOME</S.ButtonMenu>
           <S.ButtonMenu onClick={() => push("#about")}>ABOUT</S.ButtonMenu>
           <S.ButtonMenu onClick={() => push("#jobs")}>JOBS</S.ButtonMenu>
-          <Button>CONTACT US</Button>
+          <Button fullwidth={"false"} onClick={() => push("#contact")}>
+            CONTACT US
+          </Button>
         </S.ContainerButtons>
       </S.ContainerMenu>
     </S.Container>
