@@ -93,7 +93,7 @@ export const ContainerOffers = styled.div`
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     max-width: 65rem;
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
     h3 {
         font-size: 1rem;
         max-width: 10rem;
@@ -356,7 +356,7 @@ export const ContainerTextTitle = styled.div`
 export const ContainerProcess = styled.div`
     width: 100%;
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     @media (max-width: 576px) {
         flex-direction: column;
     }
