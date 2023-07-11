@@ -4,7 +4,7 @@ export const ContainerTable = styled.div`
   width: 100%;
 `;
 
-export const Table = styled.div`
+export const Table = styled.table`
   width: 100%;
 `;
 
@@ -29,17 +29,16 @@ export const Tr = styled.tr`
   
 `;
 
-export const Td = styled.td<{contrastColor?: boolean}>`
+export const Td = styled.td<{contrastcolor?: string}>`
   border-bottom: 2px solid #272626;
   text-align: left;
   align-items: center;
   padding: 15px;
-  color: ${(props) => props.contrastColor ?   "white" : props.theme.productDark4};
+  color: ${(props) => props.contrastcolor == 'true'?   "white" : props.theme.productDark4};
   h4{
     padding-left: 20px;
    
   }
- 
   img{
     margin: 0px 15px 0px 0px;
   }
@@ -54,7 +53,11 @@ export const ColoredTh = styled.th`
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   background-image: linear-gradient(to left, #FF6DC1 45% , #01F3FD 100%);
- 
+  text-align: start;
+  padding: 15px;
+  @media (max-width: 576px) {
+    padding: 1rem 0.1rem;
+  }
 `;
 
 export const Th = styled.th`

@@ -9,7 +9,7 @@ const hoverAnimation = keyframes`
     75% { border-image-source: linear-gradient(to bottom, #01F3FD , #FF6DC1 );}
     100% { border-image-source: linear-gradient(to left, #01F3FD , #FF6DC1 );}
 `
-export const Button = styled.button<{fullWidth?: boolean}>`
+export const Button = styled.button<{fullwidth?: string}>`
     background: none;
     color: white;
     border: 2px solid;
@@ -17,8 +17,8 @@ export const Button = styled.button<{fullWidth?: boolean}>`
     border-width: 2px;
     border-image-source: linear-gradient(to left, #01F3FD , #FF6DC1 );
 
-    width: ${(props) => props.fullWidth ? "100%" : '10rem'};
-    height: ${(props) => props.fullWidth ? "2.5rem" : '3.5rem'};
+    width: ${(props) => props.fullwidth === 'true'? "100%" : '10rem'};
+    height: ${(props) => props.fullwidth === 'true'? "2.5rem" : '3.5rem'};
     /* animation-name: ${hoverAnimation}; */
     animation-duration: 2s;
     animation-iteration-count: infinite;

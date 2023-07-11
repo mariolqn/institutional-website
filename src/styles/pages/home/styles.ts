@@ -156,8 +156,8 @@ export const ContainerTextLeft = styled.div`
     }
    
 `;
-export const TittleColor = styled.h1<{colored: Boolean}>`
-    color: ${(props) => props.colored ? props.theme.productAccent2 : "white"};
+export const TittleColor = styled.h1<{colored: string}>`
+    color: ${(props) => props.colored == 'true'? props.theme.productAccent2 : "white"};
     font-size: 3rem;
     margin-right: 0.5rem;
     margin-bottom: 1rem;

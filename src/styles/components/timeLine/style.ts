@@ -20,8 +20,8 @@ export const ContainerBlock = styled.div`
   align-items: flex-start;
 `;
 
-export const ContainerLeft  = styled.div<{appear ?: boolean}>`
-  opacity: ${(props) => props.appear ? 1 : 0};
+export const ContainerLeft  = styled.div<{appear ?: string}>`
+  opacity: ${(props) => props.appear === 'true' ? 1 : 0};
   text-align: right;
   margin-right: 1rem;
   min-height: 8rem;
@@ -45,8 +45,8 @@ export const ContainerMiddle = styled.div `
   
 `;
 
-export const ContainerRight = styled.div<{appear ?: boolean}>`
-  opacity: ${(props) => props.appear ? 1 : 0};
+export const ContainerRight = styled.div<{appear ?: string}>`
+  opacity: ${(props) => props.appear === 'true' ? 1 : 0};
   margin-left: 1rem;
   min-height: 8rem;
     h2{

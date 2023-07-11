@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div<{ changeColor?: boolean }>`
+export const Container = styled.div<{ changecolor?: string }>`
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -13,7 +13,7 @@ export const Container = styled.div<{ changeColor?: boolean }>`
   }
   border-top: 1px solid
     ${(props) =>
-      props.changeColor
+      props.changecolor == "true"
         ? props.theme.productAccent1
         : props.theme.productAccent2};
   justify-content: space-between;

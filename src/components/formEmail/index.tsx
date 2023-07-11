@@ -15,7 +15,7 @@ export default function FormEmail() {
         <S.Input placeholder="Your company's website"></S.Input>
         <S.Input placeholder="Describe your company in 1 sentence"></S.Input>
         <S.Input placeholder="ARR Range"></S.Input>
-        <Button fullWidth={true}>Send</Button>
+        <Button fullwidth={"true"}>Send</Button>
       </S.Form>
     </S.Container>
   );
