@@ -156,7 +156,7 @@ export const ContainerTextLeft = styled.div`
     }
    
 `;
-export const TittleColor = styled.h1<{colored ?: boolean}>`
+export const TittleColor = styled.h1<{colored: Boolean}>`
     color: ${(props) => props.colored ? props.theme.productAccent2 : "white"};
     font-size: 3rem;
     margin-right: 0.5rem;
@@ -224,20 +224,80 @@ export const CompanyBenefits = styled.div`
 
 export const ContainerEmail = styled.div`
     width: 100%;
+    display: flex;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
    
 `;
 export const ContainerSocial = styled.div`
     display:flex;
     align-items: center;
+    gap: 0.5rem;
+    
+    h4{
+        display: flex;
+        justify-items: center;
+        
+     
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 2rem;
+       justify-content: center;
+        align-items: center;
+    }
+
 `;
 export const ContainerEmailLeft = styled.div`
     display:flex;
     flex-direction: column;
     width: 50%;
+    gap: 1rem;    
+
+    div{
+        margin-top: 1rem;
+    }
+    h1{
+      
+        font-size: 2.4rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        background-image: linear-gradient(to left, #FF6DC1 50% , #01F3FD 100%);
+    }
+    h4{
+        margin-top: 1rem;
+        line-height: 2;
+        width: 100%;
+        @media (max-width: 768px) {
+            max-width: 40rem;
+            width: 100%;
+            text-align: center;
+
+        }
+
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
 `;
 
 export const ContainerEmailRight = styled.div`
     display:flex;
+    width: 50%;
+    flex-direction: column;
+    @media (max-width: 768px) {
+       max-width: 30rem;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+   
 `;
 
 export const ContainerTable = styled.div`
@@ -266,16 +326,15 @@ export const ContainerTextTitle = styled.div`
             font-size: 1.2rem;
         }
     }
-    
 `;
 
 export const ContainerProcess = styled.div`
     width: 100%;
     display: flex;
+    margin-bottom: 10rem;
     @media (max-width: 576px) {
         flex-direction: column;
     }
-    
 `;
 export const ContainerLeft = styled.div`
     width: 50%;

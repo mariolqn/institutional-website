@@ -48,7 +48,7 @@ export default function Home() {
         <S.ContainerSecondArea>
           <S.ContainerTextLeft>
             <div style={{ display: "flex" }}>
-              <S.TittleColor>Second </S.TittleColor>
+              <S.TittleColor colored={false}>Second </S.TittleColor>
               <S.TittleColor colored={true}> Area</S.TittleColor>
             </div>
             <h4>
@@ -111,9 +111,9 @@ export default function Home() {
         </S.ContainerProcess>
       </section>
       <>
-        {/* <S.ContainerEmail>
+        <S.ContainerEmail>
           <S.ContainerEmailLeft>
-            <Image src={Logo} alt="logo"></Image>
+            <Image src={Logo} alt="logo" />
             <div>
               <h1>Get in touch</h1>
               <h4>
@@ -127,9 +127,9 @@ export default function Home() {
             </div>
           </S.ContainerEmailLeft>
           <S.ContainerEmailRight>
-            <FormEmail></FormEmail>
+            <FormEmail />
           </S.ContainerEmailRight>
-        </S.ContainerEmail> */}
+        </S.ContainerEmail>
       </>
     </S.Container>
   );
