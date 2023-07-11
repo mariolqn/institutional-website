@@ -138,6 +138,9 @@ export const ContainerSecondArea = styled.div`
         flex-direction: column;
         margin-bottom: 10rem;
     }
+    @media (max-width: 768px) {
+        margin-bottom: 10rem;
+    }
    
 `;
 export const ContainerTextLeft = styled.div`
@@ -356,9 +359,12 @@ export const ContainerTextTitle = styled.div`
 export const ContainerProcess = styled.div`
     width: 100%;
     display: flex;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
     @media (max-width: 576px) {
         flex-direction: column;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 10rem;
     }
 `;
 export const ContainerLeft = styled.div`
