@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    runtime: 'edge',
-  },
+  output: 'export',
   reactStrictMode: true,
   compiler: {
     // Enables the styled-components SWC transform
