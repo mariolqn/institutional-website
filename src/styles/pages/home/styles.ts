@@ -305,6 +305,29 @@ export const ContainerEmailLeft = styled.div`
     }
 `;
 
+// export const ContainerEmailRight = styled.div`
+//     display:flex;
+//     width: 50%;
+//     flex-direction: column;
+//     @media (max-width: 768px) {
+//        max-width: 30rem;
+//         width: 100%;
+//         margin-bottom: 5rem;
+//         margin-left: 0rem;
+//     }
+    
+//     @media (max-width: 992px) {
+      
+//       margin-left: 0rem;
+//   }
+  
+//     @media (min-width: 1025px) {
+      
+//         margin-left: 10rem;
+//     }
+   
+// `;
+
 export const ContainerEmailRight = styled.div`
     display:flex;
     width: 50%;
@@ -327,6 +350,7 @@ export const ContainerEmailRight = styled.div`
     }
    
 `;
+
 
 export const ContainerTable = styled.div`
     width: 100%;
