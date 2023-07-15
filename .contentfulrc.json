@@ -1,5 +1,6 @@
 {
-  "managementToken": "sE-Ksfj7DPBV_JFVSbTaMQwI5xIZFL5muja5q1-T0Uc",
-  "activeEnvironmentId": "master",
-  "host": "api.contentful.com"
+  "activeEnvironmentId" : "master",
+  "activeSpaceId" : "c5pczxt34w4y",
+  "host" : "api.contentful.com",
+  "managementToken" : "sE-Ksfj7DPBV_JFVSbTaMQwI5xIZFL5muja5q1-T0Uc"
 }
